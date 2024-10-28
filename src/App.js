@@ -1,3 +1,10 @@
+import React from "react";
+import "./App.css";
+import Layout from "./components/Layout";
 export default function App() {
-  return <h1>Brainwave</h1>;
+  return (
+    <div>
+      <Layout />
+    </div>
+  );
 }
