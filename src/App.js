@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import Layout from "./components/Layout";
+import Navbar from "./components/Navbar";
+
 export default function App() {
   return (
     <div>
-      <Layout />
+      <Navbar />
     </div>
   );
 }
