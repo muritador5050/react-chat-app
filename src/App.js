@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-
+import Signin from "./components/Signin";
 export default function App() {
   return (
     <div>
-      <Navbar />
+      {" "}
+      <Signin />
     </div>
   );
 }
