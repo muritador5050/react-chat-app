@@ -82,6 +82,7 @@
 .password {
   background: transparent;
   padding-left: 5px;
+  color: #ffffff;
 }
 .button {
   background-color: var(--color);
