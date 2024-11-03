@@ -112,6 +112,12 @@
   flex-direction: column;
   gap: 10px;
   list-style-type: none;
+  width: inherit;
+  border: 2px solid yellowgreen;
+}
+
+.logout {
+  background-color: red;
 }
 
 .nav-page:hover {
@@ -120,4 +126,29 @@
 .route-page {
   width: 100%;
   border: 2px solid green;
+}
+
+/** sendMessage**/
+.send-message-container {
+  border: 2px solid green;
+  height: 100vh;
+  position: relative;
+}
+
+.send-message {
+  display: flex;
+  align-items: flex-end;
+  width: fit-content;
+  border: 5px solid red;
+}
+
+#messageInput {
+  width: 800px;
+  height: 40px;
+}
+
+#sent-btn {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
 }
