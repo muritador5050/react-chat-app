@@ -23,15 +23,9 @@
 
 .signin-container {
   display: flex;
-  /* justify-content: space-evenly; */
   width: 1000px;
   height: 600px;
   margin: auto;
-  /* background: linear-gradient(
-    to right,
-    var(--bg-color) 0% 50%,
-    var(--foregroundColor) 50% 100%
-  ); */
   border-radius: 20px;
   border: 2px solid purple;
 }
@@ -99,13 +93,12 @@
   display: flex;
 }
 .nav-page {
-  width: 80px;
+  width: fit-content;
   height: inherit;
   border-radius: 10px;
   background: var(--foregroundColor);
   padding: 15px;
   cursor: pointer;
-  transition: width 2s;
 }
 .nav-page ul {
   display: flex;
@@ -113,16 +106,13 @@
   gap: 10px;
   list-style-type: none;
   width: inherit;
-  border: 2px solid yellowgreen;
 }
 
 .logout {
-  background-color: red;
+  justify-self: flex-end;
+  margin-bottom: -50px;
 }
 
-.nav-page:hover {
-  width: 150px;
-}
 .route-page {
   width: 100%;
   border: 2px solid green;
@@ -130,25 +120,68 @@
 
 /** sendMessage**/
 .send-message-container {
+  width: inherit;
   border: 2px solid green;
-  height: 100vh;
-  position: relative;
+  display: flex;
+}
+
+.message-box {
+  background-color: var(--bg-color);
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--foregroundColor);
 }
 
 .send-message {
   display: flex;
-  align-items: flex-end;
-  width: fit-content;
-  border: 5px solid red;
 }
 
-#messageInput {
-  width: 800px;
+.form-input__input {
   height: 40px;
+  flex-basis: 1200px;
+  background-color: var(--foregroundColor);
+  color: #ffffff;
 }
+
+
 
 #sent-btn {
-  width: 100px;
   height: 40px;
   cursor: pointer;
+  background-color: var(--foregroundColor);
+  color: #ffffff;
+  flex-basis: 100px;
+  border: none;
+}
+#sent-btn:hover{
+  opacity: .5;
+}
+.send-box {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+}
+
+/**chat-bubble**/
+.chat-bubble {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  background-color:var(--foregroundColor);
+  color: #ffffff;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-top: 0.7em;
+}
+
+.right {
+  border: 2px solid fuchsia;
+  width: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+
 }
